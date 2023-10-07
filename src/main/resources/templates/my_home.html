@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>My home page</title>
+    </head>
+
+    <body>
+
+        <div>
+
+            <h1>It is my home page!</h1>
+
+            <hr>
+            <a th:href="@{/additionPage}">add student in table</a><br>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Lastname</th>
+                        <th>Firstname</th>
+                        <th>Birt_day</th>
+                        <th>Birth_month</th>
+                        <th>Birth_year</th>
+                        <th>Group</th>
+                        <th>Faculty</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr th:each="student: ${talabaObj}">
+                        <td th:text="${student.lastname}"></td>
+                        <td th:text="${student.firstname}"></td>
+                        <td th:text="${student.days}"></td>
+                        <td th:text="${student.months}"></td>
+                        <td th:text="${student.years}"></td>
+                        <td th:text="${student.groups}"></td>
+                        <td th:text="${student.faculty}"></td>
+                        <td th:text="${student.address}"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </body>
+</html>

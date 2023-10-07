@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Addition new students here</title>
+    </head>
+
+    <body>
+
+        <div>
+            <h1>Addition new students here!</h1>
+            <hr>
+
+            <form action="#" th:action="@{saveTalaba}" th:object="${student}" method="post">
+                <input th:field="*{lastname}" type="text" placeholder="Enter your lastname">
+                <input th:field="*{firstname}" type="text" placeholder="Enter your firstname">
+                <input th:field="*{days}" type="text" placeholder="Enter your birth day">
+                <input th:field="*{months}" type="text" placeholder="Enter your birth month">
+                <input th:field="*{years}" type="text" placeholder="Enter your birth year">
+                <input th:field="*{groups}" type="text" placeholder="Enter your group">
+                <input th:field="*{faculty}" type="text" placeholder="Enter your faculty">
+                <input th:field="*{address}" type="text" placeholder="Enter your address">
+
+                <button type="submit">Send to baza >>></button>
+            </form>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,13 @@
+server:
+  port: 7172
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_web
+
+    username: realtimes
+    password: realtimes
+
+  jpa:
+    hibernate:
+      ddl-auto: update
