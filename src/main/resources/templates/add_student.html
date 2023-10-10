@@ -9,6 +9,7 @@
 
         <div>
             <h1>Addition new students here!</h1>
+<!--            <a th:href="">back home page</a>-->
             <hr>
 
             <form action="#" th:action="@{saveTalaba}" th:object="${student}" method="post">
@@ -24,6 +25,8 @@
                 <button type="submit">Send to baza >>></button>
             </form>
         </div>
+
+    <a th:href="@{/}">go back</a>
 
     </body>
 </html>

@@ -7,7 +7,7 @@
 
     <body>
 
-        <div>
+        <div align="center">
 
             <h1>It is my home page!</h1>
 
@@ -26,6 +26,7 @@
                         <th>Group</th>
                         <th>Faculty</th>
                         <th>Score</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
 
@@ -39,6 +40,11 @@
                         <td th:text="${student.groups}"></td>
                         <td th:text="${student.faculty}"></td>
                         <td th:text="${student.address}"></td>
+
+                        <td>
+                            <a th:href="@{/updateStudent/{ids} (ids = ${student.id})}">Update</a>
+                            <a th:href="@{/deleteStudent/{ids} (ids = ${student.id})}">Delete</a>
+                        </td>
                     </tr>
                 </tbody>
 

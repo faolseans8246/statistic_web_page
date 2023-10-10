@@ -9,4 +9,8 @@ public interface MainService {
     public List<Talaba> getAllStudents();
 
     public void saves(Talaba talaba);
+
+    public void deleteStudent(long ids);
+
+    public Talaba getTalabaById(long ids);
 }

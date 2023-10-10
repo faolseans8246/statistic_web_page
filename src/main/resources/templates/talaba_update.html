@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose talaba place with ID</title>
+</head>
+<body>
+
+    <div>
+        <h1>Update new student</h1>
+        <!--            <a th:href="">back home page</a>-->
+        <hr>
+
+        <form action="#" th:action="@{saveTalaba}" th:object="${talaba}" method="post">
+
+            <input type="hidden" th:href="*{id}">
+
+            <input th:field="*{lastname}" type="text" placeholder="Enter your lastname">
+            <input th:field="*{firstname}" type="text" placeholder="Enter your firstname">
+            <input th:field="*{days}" type="text" placeholder="Enter your birth day">
+            <input th:field="*{months}" type="text" placeholder="Enter your birth month">
+            <input th:field="*{years}" type="text" placeholder="Enter your birth year">
+            <input th:field="*{groups}" type="text" placeholder="Enter your group">
+            <input th:field="*{faculty}" type="text" placeholder="Enter your faculty">
+            <input th:field="*{address}" type="text" placeholder="Enter your address">
+
+            <button type="submit">Send to baza >>></button>
+        </form>
+    </div>
+
+    <a th:href="@{/}">go back</a>
+
+</body>
+</html>
