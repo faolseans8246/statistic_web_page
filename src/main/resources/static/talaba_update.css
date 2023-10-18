@@ -1,0 +1,11 @@
+body {
+    background-image: url("https://avatars.mds.yandex.net/i?id=5931d61db0fde3d3ddd342276948e891952de501-10448622-images-thumbs&n=13");
+    background-size: cover;
+    height: 100vh;
+}
+
+.text-talaba_update {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
