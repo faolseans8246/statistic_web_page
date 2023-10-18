@@ -3,16 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title>Addition new students here</title>
+        <link rel="stylesheet" href="add_student.css">
     </head>
 
     <body>
 
-        <div>
-            <h1>Addition new students here!</h1>
+        <div align="center">
+            <h1 class="main-text-add_student">Addition new students here!</h1>
 <!--            <a th:href="">back home page</a>-->
-            <hr>
+            <hr color="red">
 
-            <form action="#" th:action="@{saveTalaba}" th:object="${student}" method="post">
+            <form action="#" th:action="@{saveTalaba}" th:object="${student}" method="post" class="form-add_student">
                 <input th:field="*{lastname}" type="text" placeholder="Enter your lastname">
                 <input th:field="*{firstname}" type="text" placeholder="Enter your firstname">
                 <input th:field="*{days}" type="text" placeholder="Enter your birth day">
@@ -26,7 +27,7 @@
             </form>
         </div>
 
-    <a th:href="@{/}">go back</a>
+    <a th:href="@{/}" class="go-to-link-add_student">go back</a>
 
     </body>
 </html>

@@ -1,0 +1,41 @@
+body {
+    background-image: url("https://avatars.mds.yandex.net/i?id=29da3337598da4b7045c57ec1486e79fdc37c4a6-10952374-images-thumbs&n=13");
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-text-add_student {
+    color: yellow;
+}
+
+.form-add_student {
+    margin: 15px;
+    padding: 10px;
+}
+
+.form-add_student input {
+    border: 2px dotted red;
+    border-radius: 15px;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+}
+
+.form-add_student button {
+    background-color: yellow;
+    color: red;
+    padding: 2px 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.go-to-link-add_student {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: aqua;
+    color: red;
+    border: 1px solid green;
+    border-radius: 15px;
+    width: 100px;
+
+}
